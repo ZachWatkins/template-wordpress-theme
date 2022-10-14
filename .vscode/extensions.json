@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "webben.browserslist",
+    "dbaeumer.vscode-eslint",
+    "syler.sass-indented",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "neilbrayfield.php-docblocker",
+    "bmewburn.vscode-intelephense-client",
+    "emallin.phpunit",
+    "ikappas.phpcs"
+  ]
+}

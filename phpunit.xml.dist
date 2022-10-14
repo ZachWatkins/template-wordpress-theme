@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+	bootstrap="tests/bootstrap.php"
+	backupGlobals="false"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+    convertDeprecationsToExceptions="true"
+    beStrictAboutChangesToGlobalState="true"
+	>
+    <php>
+        <ini name="log_errors_max_len" value="0"/>
+    </php>
+	<testsuites>
+		<testsuite name="Sample">
+			<directory suffix="Test.php">./tests/</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>

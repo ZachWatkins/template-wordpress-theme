@@ -1,0 +1,4 @@
+# eslint ignores these files and folders.
+node_modules
+dist
+vendor

@@ -1,0 +1,23 @@
+/*!
+  Theme Name:  Template Genesis Theme
+  Theme URI:   https://github.com/zachwatkins/template-genesis-theme
+  Author:      Zachary K. Watkins
+  Author URI:  https://github.com/zachwatkins/template-genesis-theme
+  Description: Template Genesis child theme
+  Version:     0.1.0
+  License:     GPL-2.0+
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+  Text Domain: template-genesis-theme
+  Template:    genesis
+*/
+
+/* ----------------------------------------------------------------------------
+
+  WordPress requires a style.css file located in the theme's root folder for
+  stuff to work. However, we will not be using vanilla CSS. We're using SASS.
+
+  SASS is a superset of CSS that adds in amazing features such as variables,
+  nested selectors and loops. It's also the easiest way to customize
+  Foundation. All SASS files are located in the /css/src folder.
+
+---------------------------------------------------------------------------- */
