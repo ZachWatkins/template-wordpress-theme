@@ -8,7 +8,7 @@
     "wordpress"
   ],
   "author": "Zachary K. Watkins <zwatkins.it@gmail.com>",
-  "license": "MIT",
+	"license": "GPL-2.0-or-later",
   "scripts": {
     "build": "webpack",
     "build:dev": "webpack --mode development",

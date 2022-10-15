@@ -7,8 +7,7 @@
     "esbenp.prettier-vscode",
     "eamodio.gitlens",
     "neilbrayfield.php-docblocker",
-    "bmewburn.vscode-intelephense-client",
     "emallin.phpunit",
-    "ikappas.phpcs"
-  ]
+    "DEVSENSE.phptools-vscode"
+]
 }
