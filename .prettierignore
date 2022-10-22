@@ -1,19 +1,9 @@
-## [START] From .gitignore
-# IDE Artifacts
 .vscode
-
 node_modules/
 vendor/
 dist/
-*.log
-css/*.css
-## [END] From .gitignore
-
-# Prettier-only ignores.
 assets/
-dist/
-CHANGELOG.md
-package-lock.json
-package.json
-test/assets/
 docs/
+package.json
+package-lock.json
+test/assets/

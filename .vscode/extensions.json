@@ -8,6 +8,11 @@
     "eamodio.gitlens",
     "neilbrayfield.php-docblocker",
     "emallin.phpunit",
-    "DEVSENSE.phptools-vscode"
-]
+    "devsense.phptools-vscode",
+    "devsense.composer-php-vscode",
+    "johnbillion.vscode-wordpress-hooks",
+    "zobo.php-intellisense",
+    "shevaua.phpcs",
+    "persoderlind.vscode-phpcbf"
+  ]
 }

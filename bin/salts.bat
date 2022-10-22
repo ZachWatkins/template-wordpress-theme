@@ -1,3 +1,4 @@
 @ECHO OFF
 setlocal DISABLEDELAYEDEXPANSION
-bash bin/salts.sh
+SET BIN_TARGET=%~dp0salts.sh
+sh "%BIN_TARGET%" %*

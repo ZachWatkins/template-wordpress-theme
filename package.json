@@ -73,6 +73,10 @@
     "!(*sass).md": [
       "prettier --write",
       "git add"
+    ],
+    "**/*.php": [
+      "prettier --write",
+      "eslint"
     ]
   }
 }

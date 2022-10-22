@@ -5,7 +5,10 @@
         }
     ],
     "settings": {
-        "terminal.integrated.allowChords": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[php]": {
+            "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
+        },
         "editor.detectIndentation": false,
         "editor.tabCompletion": "on",
         "editor.formatOnPaste": true,
@@ -14,7 +17,7 @@
         "editor.codeActionsOnSave": {
             "source.fixAll.eslint": true
         },
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "terminal.integrated.allowChords": false,
         "eslint.debug": true,
         "eslint.run": "onSave",
         "eslint.lintTask.enable": true,
@@ -23,99 +26,26 @@
             "enable": true
         },
         "eslint.format.enable": true,
-        "eslint.nodeEnv": "production",
-        "eslint.probe": [
-            "javascript",
-            "javascriptreact",
-            "typescript",
-            "typescriptreact",
-            "html",
-            "markdown",
-            "php"
-        ],
+        "eslint.nodeEnv": "development",
         "eslint.validate": [
             "javascript",
             "javascriptreact",
             "typescript",
             "typescriptreact",
             "html",
-            "markdown",
-            "php"
+            "markdown"
         ],
         "phpcs.enable": true,
-        "phpcs.ignorePatterns": ["*vendor/*"],
-        "phpcs.standard": "WordPress",
         "phpcs.showWarnings": true,
-        "php-docblocker.alignParams": true,
-        "php-docblocker.alignReturn": true,
-        "php-docblocker.author": {
-            "name": "Zachary K. Watkins",
-            "email": "<zwatkins.it@gmail.com>"
-        },
-        "php-docblocker.defaultType": "string",
-        "php-docblocker.extra": [
-            "@throws ${###:Throwable}",
-            "@version ${###:${env:PACKAGE_VERSION}}",
-            "@since ${###:${env:PACKAGE_VERSION}}",
-            "@return ${###:void}"
-        ],
-        "php-docblocker.paramDescription": "A parameter.",
-        "php-docblocker.classTemplate": {
-            "message": {
-                "gapAfter": true
-            },
-            "package": {
-                "content": "@package    ${env:PACKAGE_NAME}"
-            },
-            "subpackage": {
-                "content": "@subpackage ${RELATIVE_FILEPATH/^([a-z]{1})([^.]+)(\\.php)/${1:/upcase}${2}/}"
-            },
-            "since": {
-                "content": "@since      ${env:PACKAGE_VERSION}"
-            },
-            "author": {
-                "content": "@author     {{name}} {{email}}"
-            },
-            "copyright": {
-                "content": "@copyright  ${CURRENT_MONTH_NAME} ${CURRENT_DATE}, ${CURRENT_YEAR} ${env:PACKAGE_COPYRIGHT}"
-            }
-        },
-        "php-docblocker.functionTemplate": {
-            "message": {
-                "gapAfter": true
-            },
-            "since": {
-                "content": "@since     ${env:PACKAGE_VERSION}"
-            },
-            "param": {
-                "gapBefore": true
-            },
-            "return": {
-                "gapBefore": true,
-                "gapAfter": true,
-                "content": "@return    ${5|void,bool,string,array|}"
-            },
-            "author": {
-                "content": "@author    {{name}} {{email}}"
-            },
-            "license": {
-                "content": "@license   MIT"
-            },
-            "copyright": {
-                "content": "@copyright ${CURRENT_MONTH_NAME} ${CURRENT_DATE}, ${CURRENT_YEAR} ${env:PACKAGE_COPYRIGHT}"
-            }
-        },
-        "php-docblocker.qualifyClassNames": true,
-        "php-docblocker.returnDescription": "${1:void}",
-        "php-docblocker.returnGap": true,
-        "php-docblocker.propertyTemplate": {
-            "message": {
-                "gapAfter": false
-            },
-            "var": {
-                "content": "@var ${1|string,bool,int,array,object|}"
-            }
-        },
-        "php-docblocker.varDescription": "Placeholder."
+        "phpcs.executablePath": "./vendor/bin/phpcs.bat",
+        "phpcs.standard": "Squiz",
+        "phpcbf.enable": true,
+        "phpcbf.executablePath": "./vendor/bin/phpcbf.bat",
+        "phpcbf.documentFormattingProvider": true,
+        "phpcbf.onsave": true,
+        "phpcbf.standard": "Squiz",
+        "php.suggest.basic": true,
+        "php.validate.executablePath": "C:/tools/php81",
+        "php.validate.run": "onSave"
     }
 }
