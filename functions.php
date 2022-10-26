@@ -24,6 +24,8 @@ function genesis_parent_theme_enqueue_styles(): void {
 	wp_enqueue_style(
 		'genesis-style',
 		get_template_directory_uri() . '/style.css',
+        false,
+        filemtime( get_template_directory() . '/style.css' )
 	);
 	wp_enqueue_style(
 		'template-genesis-theme-style',
