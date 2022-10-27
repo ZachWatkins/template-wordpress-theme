@@ -39,20 +39,26 @@
   "config": {
     "optimize-autoloader": true,
     "preferred-install": "dist",
-    "dealerdirect/phpcodesniffer-composer-installer": true
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "scripts": {
     "post-install-cmd": [
-      "@config-wpcs"
+      "@config-wpcs",
+      "@install-codestandards"
     ],
     "config-wpcs": [
       "./vendor/bin/phpcs --config-set report_format summary,source",
       "./vendor/bin/phpcs --config-set colors 1"
     ],
+    "install-codestandards": [
+      "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+    ],
     "test:install": "bin/install-wp-tests test tester P@ssw0rd",
-    "lint": "@php ./vendor/bin/phpcs ./functions.php",
+    "lint": "@php ./vendor/bin/phpcs --filter=gitmodified .",
     "format": "@php ./vendor/bin/phpcbf --filter=gitmodified .",
     "lint:errors": "@lint -n",
     "test": [
